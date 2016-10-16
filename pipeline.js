@@ -603,3 +603,8 @@ function runPipelineNeumann(instructions) {
         }
     }
 }
+
+
+function about(){
+    alert("Projeto desenvolvido em colaboração de Pedro Henrique e Jonathan Rocha");
+}
