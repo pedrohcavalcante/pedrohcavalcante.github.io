@@ -310,11 +310,6 @@ function Pipeline(instructions) {
                 // Iterates through waitingList looking for the jump label
                 for (i = 0; i < this.waitingList.length; i++) {
                     if (this.waitingList[i].string0.replace(":", "") == this.if.dest) {
-                        // Empties pipeline
-                        this.id = new Instruction(null, null, null, null);
-                        this.ex = new Instruction(null, null, null, null);
-                        this.mem = new Instruction(null, null, null, null);
-                        this.wb = new Instruction(null, null, null, null);
 
                         // Sets index to continue accessing instructions after jump label
                         this.index = i + 1;
@@ -603,7 +598,6 @@ function runPipelineNeumann(instructions) {
         }
     }
 }
-
 
 function about(){
     alert("Projeto desenvolvido em colaboração de Pedro Henrique e Jonathan Rocha");
