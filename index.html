@@ -1,0 +1,46 @@
+<!DOCTYPE" html>
+<html lang="pt-br">
+	<head>
+		<title>Pipeline</title>
+		<meta charset="utf-8"/>
+
+		<link rel="stylesheet" type="text/css" href="pipeline.css"/>
+        <link rel="sortcut icon" href="icon.png"  type="image/x-icon"/>
+		<script src="pipeline.js"></script>
+
+	</head>
+
+	<body>		
+
+		<div id="wholeBody">
+
+			<div id="tableRow">
+
+				<div id="outputArea">
+					<pre><p id="output">  </p></pre>
+				</div>
+
+				<div id="inputArea">
+					<textarea id="input" placeholder = "Input"></textarea>
+
+					<div id="buttonsDiv">
+						<button id="go" onclick="addInstructions()"> Enviar entrada </button>
+
+						<div id="settings">
+							<p id="settingsText"> Modelo</p>
+							<form>
+					  			<input type="radio" id="harvard" name="model" checked="true"> Harvard
+					 	 		<br>
+								<input type="radio" id="neumann" name="model"> von Neumann
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
